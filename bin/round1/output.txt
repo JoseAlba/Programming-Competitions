@@ -1,0 +1,7 @@
+Case #1: CA
+Case #2: JA
+Case #3: OCD
+Case #4: ABAA
+Case #5: BBCCABAB
+Case #6: CCABABAB
+Case #7: WSCXZADQ
