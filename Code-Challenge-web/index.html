@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Code Challenge Web</title>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic'>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!--This header represents the black box on the very top of the webpage-->
+    <div id = "header">
+        <!--I divided header into three components left middle and right the components represent where the items are-->
+        <span id = "header_left">
+                <button type = "button" id = "colour" onclick="changeColour()"></button>
+
+                <select id="adminstrator" onclick="validate()">
+                    <option value= "Webmaster">Webmaster</option>
+                    <option value= "Business">Business Administrator</option>
+                    <option value= "Other">Other</option>
+                </select>
+
+
+            <img src = "images/speechbubble.png" alt = "Speech Bubble" class= "icon">
+            <img src = "images/checkmark.png" alt = "Check Mark" class= "icon">
+            <img src = "images/scroll.png" alt = "Scroll" class= "icon">
+            <img src = "images/pencil.png" alt = "Pencil" class= "icon">
+
+        </span>
+
+        <span id="header_center">
+            <form action = "main.js">
+                <input type="search" name="Top_Searchbar" onclick="" placeholder="Search Everywhere">
+            </form>
+        </span>
+
+        <span id="header_right">
+            <img src = "images/plus.png" alt = "Plus" class= "icon">
+            <img src = "images/triangle.png" alt = "Triangle" class= "icon">
+            <img src = "images/gears.png" alt = "Gears" class= "icon">
+            <img src = "images/placeholder.png" alt = "Placeholder" class= "icon">
+
+        </span>
+    </div>
+
+<!--This portion represents the section below the blacjk header and the image-->
+    <div id = "sub_header">
+        <img src = "images/house.png" alt = "House" id="house">
+
+        <a>Dashboard</a>
+        <a>About</a>
+        <a>Campaigns/Brand</a>
+        <a>Files</a>
+        <a>Departments</a>
+        <a>People</a>
+
+    </div>
+<!--This div represents the image area-->
+    <div id="image">
+        <h1>Welcome to the Community</h1>
+        <h2><br>Share, connect and collaborate.</h2>
+
+        <button type="button" name="firstbutton" onclick="changePicture('peoplestreet.jpg')"></button>
+        <button type="button" class="lightgrey" name="secondbutton" onclick="changePicture('veneza.jpg')"></button>
+        <button type="button" class="grey" name="thirdbutton" onclick="changePicture('Panama.jpg')"></button>
+
+    </div>
+
+<!--This represents the area below the image and above the header. I split sections into three sections
+each section represents a column of the sections-->
+    <div id = "sections">
+        <!--the first section was the little area below the image and above the first horizontal line-->
+        <div id="firstsection">
+            <h3>Welcome to the community. This is where you will work collaboratively, <br>
+            access resources and connect on projects and tasks.</h3>
+            <button type = "button">LEARN MORE</button>
+        </div>
+
+        <hr>
+
+        <!--this section represents the area from Stories from us to the second horizontal line
+        I split this section into three containers each container represents one of the three rows-->
+        <div id="secondsection">
+            <h1>Stories from Us</h1>
+
+            <span id="secondsection_part1">
+                <h6 class="date">May 20, 2015</h6>
+                <h5>Corporate Announcement</h5>
+                <h6>Strategy</h6>
+                <img src="images/macbook.jpg" alt="Writing on  Macbook">
+                <p>We want to ensure you are comfortable with our new and awesome platform. Since
+                    we have launched our new community we have been receiving excellent feedback, but
+                    we would like to personally hear from you.</p>
+                <button type="button" class ="more">Read More</button>
+            </span>
+
+            <span id="secondsection_part2">
+                <h6 class="date">July 18,2015</h6>
+                <h5>New Office Location</h5>
+                <h6>Strategy</h6>
+                <img src="images/windows.jpg" alt="Windows">
+                <p>We have officially moved into our new office location! It has been a long time
+                coming but we have survived and now we are settling in.</p>
+                <button type="button" class="more">Read More</button>
+            </span>
+
+            <span id="secondsection_part3">
+                <h6 class="date">August 26,2015</h6>
+                <h5>Connect with coworkers</h5>
+                <h6>Strategy</h6>
+                <img src="images/plants.jpg" alt="Plants">
+                <p>We are looking into using this new platform to further assist you in connecting with your
+                coworkers. We are hoping this tool will rock!</p>
+                <button type="button" class="more">Read More</button>
+            </span>
+            <button type="button" id="secondsectionbutton">Load More</button>
+        </div>
+
+        <hr>
+    <!--The third sections is the section from Whats Happening here to the black section of the webpage
+    I created three containers, the middle container is twice the size of the first and third container-->
+        <div id="thirdsection">
+            <h1>What's Happening Here</h1>
+
+            <div id="thirdsection_part1">
+                <h2>Microblog</h2>
+                <hr class="blue">
+                <div class="microblog">
+                    <img src="images/steam.png" alt="Steam" class="like right">
+                    <img src="images/Jose.jpg" class="face">
+                    <h4 class="name nospace">Jose Alba</h4>
+                    <h5 class="date nospace">said 2 days ago</h5>
+                    <p>New sales demo has officially launched. Pop over to the Sales Departments to check out.</p>
+                    <button type="button" class="buttonsection3">Reply</button>
+                </div>
+                <hr>
+                <div class="microblog">
+                    <img src="images/steam.png" alt="Steam" class="like right">
+                    <img src="images/Jose.jpg" class="face">
+                    <h4 class="name nospace">Jose Alba</h4>
+                    <h5 class="date nospace">said 2 days ago</h5>
+                    <p>Donuts are in the kitchen to celebrate today!</p>
+                    <button type="button" class="buttonsection3">Reply</button>
+                </div>
+                <hr>
+
+                <button type="button" class="more smaller loadmore">Load More Posts</button>
+            </div>
+            <!--thirdsection_part2 div represents the discussion forms area-->
+            <div id="thirdsection_part2">
+                <h2>Discussion Forums</h2>
+                <hr class="blue thinker">
+                <div class="discussion">
+                    <img src="images/Jose.jpg" class="face">
+                    <p class="situation">Discussion</p>
+                    <p class="topic">Sales inquiry</p>
+                    <br>
+                    <p>John Smith</p>
+                    <p class="date">- 0 replies - 1 day ago </p>
+                    <img src="images/like.png" alt="Like" class="like right">
+                </div>
+
+                <hr>
+                <br>
+
+                <div class="discussion">
+                    <img src="images/Jose2.jpg" class="face">
+                    <p class="situation">Question</p>
+                    <p class="topic">Where can I find our guidelines?</p>
+                    <br>
+                    <p>Lena Kors</p>
+                    <p class="date">- 4 replies - 9 day ago </p>
+                    <img src="images/like.png" alt="Like" class="like right">
+                </div>
+
+                <hr>
+                <br>
+
+                <div class="discussion">
+                    <img src="images/Jose.jpg" class="face">
+                    <p class="situation">Problem</p>
+                    <p class="topic">Issue I'm Having</p>
+                    <br>
+                    <p>John Smith</p>
+                    <p class="date">- 0 replies - 9 day ago </p>
+                    <img src="images/like.png" alt="Like" class="like right">
+
+                </div>
+
+                <hr>
+                <br>
+
+                <div class="discussion">
+                    <img src="images/Jose2.jpg" class="face">
+                    <p class="situation">Problem</p>
+                    <p class="topic">IT:inconsistent freezing</p>
+                    <br>
+                    <p>Lena Kors</p>
+                    <p class="date">- 0 replies - 10 day ago </p>
+                    <img src="images/like.png" alt="Like" class="like right">
+                </div>
+
+                <hr>
+                <br>
+
+                <button type="button" class="buttonsection3">Add Topic</button>
+                <button type="button" class="more smaller loadmore">Load More Posts</button>
+            </div>
+
+            <div id="thirdsection_part3">
+                <h2>Activity</h2>
+                <hr class="blue">
+                <div class="activity">
+                    <h5 class="date">August 25, 2015</h5>
+                    <hr>
+                    <img src="images/page.jpg" class="thirdsectionicon">
+                    <h3 class="topic nospace">Budget</h3>
+                    <p>By John Smith</p>
+                    <br>
+                    <p class="date">5 days ago</p>
+                </div>
+
+                <hr>
+
+                <div class="activity">
+                    <img src="images/page.jpg" class="thirdsectionicon">
+                    <h3 class="topic nospace">Budget</h3>
+                    <p>By John Smith</p>
+                    <br>
+                    <p class="date">5 days ago</p>
+                </div>
+                <hr>
+
+                <button type="button" class="more smaller loadmore">Older Activity</button>
+            </div>
+        </div>
+
+        <!--this section represents the area right above the footer section at the bottom of the webpage
+        it is where the icons are-->
+        <div id="bottomsection">
+            <h5 class = "left grey">Viewed 121 times</h5>
+            <br>
+            <img src="images/bell.png" alt="Bell" class="icon">
+            <h5 class="left grey indent">Follow</h5>
+
+            <img src="images/email.png" alt="Email" class="icon">
+            <h5 class="left grey">Email Link</h5>
+
+            <img src="images/horn.png" alt="horn" class="icon">
+            <h5 class="left grey">Broadcase</h5>
+
+            <h5 class = "right grey">Feedback</h5>
+        </div>
+    </div>
+
+<!--footer section is the bottom black section of the webpage I did this part of the webpage by splitting
+the footer section into four parts -->
+    <div id = "footer">
+        <div id = "footer_part1">
+            <p class="grey">© 2016</p>
+        </div>
+
+        <div id = "footer_part2">
+            <h4 class="lightgrey">HELPFUL TOOLS</h4>
+            <h5 class="grey">Check out a list of our helpful tools to get the job done quickly. It's breeze.
+            Click the link below to view all.</h5>
+            <h5 class= "info">View all tools</h5>
+        </div>
+
+        <div id = "footer_part3">
+            <h4 class="lightgrey">HELPFUL SITES</h4>
+            <h5 class="grey">Looking for inspiration? Look no further. Check out the links below.</h5>
+            <h5 class="info">View helpful sites</h5>
+        </div>
+
+        <div id = "footer_part4">
+            <h4 class="lightgrey">CORPORATE SITE</h4>
+            <h5 class= "grey">Don't forget to update yourself on new products and services we are selling.</h5>
+            <h5 class="info">Corporate sites</h5>
+            <img src = "images/igloo.jpg" alt = "IGLOO" id="igloo">
+        </div>
+    </div>
+
+<!--the script is called at the very bottom inorder to optimzie performance-->
+<script src="js/main.js"></script>
+</body>
+</html>
